@@ -1,0 +1,36 @@
+
+                        / MiniTwit /           
+
+    ~ Qu'est ce que MiniTwit?
+
+      Un clone de twitter basé sur SQLite et Flask.
+
+    ~ Comment l'installer sur Windows 7?
+
+	  1. Avoir python 2.7.x installé sur votre machine.
+	
+	  2. Télécharger le fichier http://python-distribute.org/distribute_setup.py
+		 qui installe la commande easy_install.
+		 
+	  3. Double-cliquer sur le script distribute_setup.py et ajouter les chemins 
+		 C:\Python27 et C:\Python27\Scripts dans le Path de Windows.
+		 
+	  4. Ouvrir une invite de commande avec les droits administrateur et exécuter
+	     easy_install pip.
+		 
+	  5. Installer désormais le framework flask à l'aide de la commande pip install Flask.
+	
+      6. Vous pouvez éditer la configuration de l'application web
+	     en éditant le fichier minitwit.py.
+
+      7. Il ne vous reste plus qu'à lancer l'application web à l'aide
+	     de la commande : python minitwit.py. Pour se connecter au mini-twitter,
+		 il faut lancer un navigateur web et se connecter à l'adresse http://127.0.0.1:5000/.
+		 
+	~ Peut-on installer Flask framework sur un autre OS ou dans environnement virtuel?
+	
+	  Plus d'informations à l'adresse http://flask.pocoo.org/docs/installation/
+
+    ~ Est-ce testé?
+
+      Lancer 'minitwit_tests.py' pour tester l'application.

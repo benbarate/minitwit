@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Top twittos{% endblock %}
+{% block body %}
+	<h2>Top twittos</h2>
+	<ul class="twittos">
+		{% for user in users %}
+		<li><img src="{{ user.email|gravatar(size=48) }}"><p>
+		<strong>
+			<a href="{{ url_for('user_timeline', username=user.username)}}">
+				{{ user.username }}
+			</a>
+		</strong>
+		 wrote {{ user.nb_msg }} message(s).
+  {% else %}
+    <li><em>There's no users so far.</em>
+  {% endfor %}
+  </ul>
+{% endblock %}

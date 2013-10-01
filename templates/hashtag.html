@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Hashtags listing{% endblock %}
+{% block body %}
+	<h2>Hashtags listing</h2>
+	<ul class="hashtag">
+		{% for hashtag in hashtags %}
+		<li>{{ hashtag.text }}
+  {% else %}
+    <li><em>There's no hashtag so far.</em>
+  {% endfor %}
+  </ul>
+{% endblock %}
